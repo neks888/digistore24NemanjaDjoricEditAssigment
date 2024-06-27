@@ -1,0 +1,8 @@
+# @see https://f1bonacc1.github.io/process-compose/
+version: 0.5
+is_strict: true
+processes:
+  app:
+    command: pnpm ng serve 
+  api-mocks:
+    command: pnpm prism mock openapi.yaml --port 4010
